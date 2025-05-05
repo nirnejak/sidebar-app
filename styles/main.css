@@ -20,4 +20,9 @@
 @theme {
   --font-sans: var(--sans-font);
   --font-mono: var(--mono-font);
+
+  --color-secondary: #939393;
+  --color-sidebar-link: #909090;
+
+  --color-background: #1e1e1e;
 }
