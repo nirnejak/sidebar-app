@@ -89,11 +89,17 @@ const Sidebar: React.FC<Props> = () => {
         >
           <div
             style={{
-              background:
-                "radial-gradient(60.22% 201.48% at -8.44% 63.16%, #202020 0%, #141414 79.33%), radial-gradient(14.89% 79.76% at 100% 50%, rgba(255, 255, 255, 0.13) 0%, rgba(109, 109, 109, 0.055625) 57.21%, rgba(0, 0, 0, 0) 100%)",
+              background: `radial-gradient(60.22% 201.48% at -8.44% 63.16%, #202020 0%, #141414 79.33%)`,
             }}
-            className="size-full rounded-r-sm border-l-2 border-l-white"
-          ></div>
+            className="size-full rounded-r-sm border-l-3 border-l-white relative"
+          >
+            <div
+              className="absolute inset-0"
+              style={{
+                background: `radial-gradient(14.89% 79.76% at 100% 50%, rgba(255, 255, 255, 0.13) 0%, rgba(109, 109, 109, 0.055625) 57.21%, rgba(0, 0, 0, 0) 100%)`,
+              }}
+            ></div>
+          </div>
         </motion.div>
 
         {LINKS.map((link, index) => (
